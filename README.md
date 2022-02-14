@@ -6,7 +6,7 @@ Created as a project for Acamica Academy course of Front End Development.
 
 This is a Giphos project designed by Acamica to their students who has to replicate it😊
 
-[Deploy site](/)
+[Deploy site](https://249ob.csb.app/)
 
 ### Languages uses 👩‍💻
 
