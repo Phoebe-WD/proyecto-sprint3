@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.App {
+    width: 100%;
+    padding: 10px;
+}
+
+.ligth-bg {
+    background-color: #fff;
+}
+
+.dark-bg {
+    background-color: #373737;
+}
+
+.Header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Light {
+    width: 148px;
+    height: 43px;
+    background-color: #fff;
+    border: 1px solid #6809e1;
+    box-sizing: border-box;
+    border-radius: 61px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #6809e1;
+    cursor: pointer;
+}
+
+.Light:hover {
+    width: 148px;
+    height: 43px;
+    background-color: #5ed7c6;
+    border: 1px solid #5ed7c6;
+    box-sizing: border-box;
+    border-radius: 61px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #6809e1;
+}
+
+.Dark {
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 61px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    width: 148px;
+    height: 43px;
+    cursor: pointer;
+}
+
+.Dark:hover {
+    color: #fff;
+    border: 1px solid #6809e1;
+    background-color: #6809e1;
+    box-sizing: border-box;
+    border-radius: 61px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    width: 148px;
+    height: 43px;
+}
+
+.Search {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.Title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #572ee5;
+}
+
+.Strong-h1 {
+    font-weight: bold;
+}
+
+.Form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#Search-input {
+    width: 542px;
+    height: 52px;
+    border: 1px solid #121212;
+    border-right: none;
+    box-sizing: border-box;
+    border-radius: 61px 0 0 61px;
+}
+
+.Btn-search {
+    width: 86px;
+    height: 52px;
+    background: #572ee5;
+    border: 1px solid #000000;
+    border-left: none;
+    box-sizing: border-box;
+    border-radius: 0px 61px 61px 0px;
+    cursor: pointer;
+}
+
+i.fa-search {
+    color: white;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #572ee5;
+}
+
+.dark-bg h2,
+.dark-bg .Title {
+    color: #fff;
+}
+
+.img-render {
+    width: 250px;
+    height: 250px;
+}
+
+.icon-search {
+    width: 20px;
+    cursor: pointer;
+}
+
+.gif-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-container {
+    width: 70%;
+    padding: 15px;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.dark-bg .card-container {
+    background-color: rgba(33, 33, 33, 1);
+}
+
+.card-container img {
+    width: 300px;
+    height: 300px;
+}
+
+.loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.loader:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #572ee5;
+    border-color: #572ee5 transparent #572ee5 transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.autocomplete {
+    height: 200px;
+    width: 635px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    background-color: #ffffff;
+    margin-top: 540px;
+    border: 0.5px solid rgba(87, 46, 229, 1);
+    overflow: scroll;
+}
+
+.autocomplete p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #572ee5;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 9px;
+    text-align: center;
+    border-bottom: 0.5px solid rgb(220, 217, 220);
+}
+
+.autocomplete p:hover {
+    background-color: rgb(237, 231, 231);
+}
