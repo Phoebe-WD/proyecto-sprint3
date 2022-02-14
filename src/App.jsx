@@ -18,7 +18,7 @@ function App() {
     search: "https://api.giphy.com/v1/gifs/search",
     autocomplete: "https://api.giphy.com/v1/gifs/search/tags",
   };
-  const apiKey = process.env.REACT_APP_API_KEY;
+  const apiKey = "AKEyV29eFhLEcliMwWdLCiUWpPdyeqnA";
   useEffect(() => {
     if (searching) {
       setLoader(true);
